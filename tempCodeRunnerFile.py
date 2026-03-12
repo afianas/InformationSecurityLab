@@ -57,12 +57,3 @@ def decrypt(text,matrix):
             result+=matrix[r2][c1]
     return result
 
-
-text=str(input("Enter string:")).upper()
-key=str(input("Enter key")).upper()
-matrix=create_matrix(key)
-
-cipher=encrypt(text,matrix)
-print(cipher)
-plain=decrypt(cipher,matrix)
-print(plain)
